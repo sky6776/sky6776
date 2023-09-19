@@ -59,117 +59,47 @@ html {
     }
 }
 
-.main {
-  font-family: "HG行書体";
-  margin: 500px;
-  padding-bottom: 10px;
-  text-align: center;
-  position: relative;
-  margin: 0 0 30px 0;
-  letter-spacing: 0px;
-}
-
-.menu-btn{
-  position: fixed;
-  top: 20px;
-  right: 20px;
-  z-index: 2;
-  width: 40px;
-  height: 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: #ffffff;
-  color: #ffffff;
-}
-
-.menu{
-  position: fixed;
-  top: 0;
-  right: 0;
-  z-index: 1;
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background: #14ee9ae8;
-}
-.menu__item{
-  font-family: "sans-serif";
-  font-size: 24px;
-  font-weight: bold;
-  width: 100%;
-  height: auto;
-  padding: .5em 1em;
-  text-align: center;
-  color: #000000;
-  box-sizing: border-box;
-}
-
-.menu{
-  transform: translateX(100vw);
-  transition: all .3s linear;
-}
-
-
-.menu.is-active{
-  transform: translateX(0);
-}
-
-@media screen and (max-width: 1279px) {
-  .menu-btn {
-    display: block;
-  }
-}
-
-@media screen and (min-width: 1280px) {
-  .menu-btn {
-    display: none;
-  }
-}
 .profile-container {
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	flex-direction: column;
 	margin-top: 20px;
-  }
+}
   
-  .profile-image {
+.profile-image {
 	width: 200px; 
 	border-radius: 50%;
 	margin-bottom: 20px;
-  }
+}
   
-  .profile-description {
+.profile-description {
 	max-width: 400px;
 	font-family: "ヒラギノ角ゴ Pro W3";
 	font-size: 16px;
-  }
+}
   
-  @media (max-width: 768px) {
-	  .aaaaa {
-		  max-width: 90%; 
-		  padding: 20px;
-	  }
+@media (max-width: 768px) {
+	.aaaaa {
+		max-width: 90%; 
+		padding: 20px;
+	}
   
-	  .profile-container {
-		  flex-direction: column;
-	  }
+	.profile-container {
+		flex-direction: column;
+	}
   
-	  .profile-image {
-		  width: 150px; 
-	  }
+	.profile-image {
+		width: 150px; 
+	}
   
-	  .profile-description {
-		  max-width: 100%;
-		  font-size: 14px;
-	  }
-  }
+	.profile-description {
+		max-width: 100%;
+		font-size: 14px;
+	}
+}
 
-.rulebox {
+.mainbox {
   margin: 2em auto;
   background: #f8f9fa;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.22);
@@ -178,7 +108,7 @@ html {
   padding: 20px;
 }
 
-.rulebox .box-title {
+.mainbox .box-title {
   font-size: 1.4em;
   background: #5fc2f5;
   padding: 10px;
@@ -188,12 +118,12 @@ html {
   letter-spacing: 0.05em;
 }
 
-.rulebox p {
+.mainbox p {
   padding: 10px 0;
   margin: 0;
 }
 
-.rulefont1 {
+.mainfont1 {
   font-size: 20px;
   font-weight: bold;
 }
