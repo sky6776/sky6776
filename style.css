@@ -18,20 +18,20 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #000; /* 黒色の背景色 */
-    z-index: 9999; /* 最前面に表示 */
+    background-color: #000;
+    z-index: 9999;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .loader {
-    border: 16px solid #000000; /* グレーの輪郭 */
-    border-top: 16px solid #ffffff; /* 青の輪郭 */
+    border: 16px solid #000000;
+    border-top: 16px solid #ffffff;
     border-radius: 50%;
     width: 120px;
     height: 120px;
-    animation: spin 2s linear infinite; /* 回転アニメーション */
+    animation: spin 2s linear infinite;
 }
 
 @keyframes spin {
