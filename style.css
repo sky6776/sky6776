@@ -186,7 +186,6 @@ hr {
 }
 
 .site-footer {
-  background: #f8f9fa;
   padding: 10px 0;
   text-align: center;
 }
@@ -195,4 +194,35 @@ hr {
   font-family: Terminal;
   color: rgb(0, 0, 0);
   font-size: 15px;
+}
+
+.toggle-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+}
+
+#dark-mode-toggle {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+body.dark-mode {
+    background-color: #1d1d1d;
+    color: #ffffff;
+}
+
+.dark-mode .mainbox {
+    background: #333;
+    color: #ffffff;
+}
+
+.dark-mode .copyright {
+    color: #fff;
 }
