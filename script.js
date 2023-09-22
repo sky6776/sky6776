@@ -6,7 +6,7 @@ window.addEventListener("load", function () {
         loadingElement.style.display = "none";
         overlayElement.style.display = "none";
         document.querySelector("main").style.display = "block";
-    }, 5000);
+    }, 3000);
 });
 
 window.addEventListener("load", function () {
@@ -19,9 +19,17 @@ window.addEventListener("load", function () {
         loadingElement.style.display = "none";
         overlayElement.style.display = "none";
         mainElement.style.display = "block";
-    }, 5000);
+    }, 3000);
 
     darkModeButton.addEventListener("click", function () {
         document.body.classList.toggle("dark-mode");
     });
 });
+
+function toggleDarkMode() {
+    const body = document.body;
+    body.classList.toggle('dark-mode');
+}
+
+const darkModeToggle = document.getElementById('dark-mode-toggle');
+darkModeToggle.addEventListener('click', toggleDarkMode);
