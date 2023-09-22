@@ -18,7 +18,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #000;
+    background-color: #ffffff;
     z-index: 9999;
     display: flex;
     justify-content: center;
@@ -26,8 +26,8 @@ body {
 }
 
 .loader {
-    border: 16px solid #000000;
-    border-top: 16px solid #ffffff;
+    border: 16px solid #ffffff;
+    border-top: 16px solid #000000;
     border-radius: 50%;
     width: 120px;
     height: 120px;
@@ -40,7 +40,7 @@ body {
 }
 
 header {
-  padding: 13px 13% 13px;
+    padding: 13px 13% 13px;
     position: fixed;
     top: 0;
     width: 100%;
@@ -49,6 +49,19 @@ header {
     display: flex;
     align-items: center;
     z-index: 1;
+    justify-content: space-between;
+}
+
+#dark-mode-toggle {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-right: 10px;
+    margin-left: auto;
 }
 
 a {
@@ -89,20 +102,33 @@ h1 {
 }
 
 @media (max-width: 768px) {
-  
-	.profile-container {
-		flex-direction: column;
-	}
-  
-	.profile-image {
-		width: 150px; 
-	}
-  
-	.profile-description {
-		max-width: 100%;
-		font-size: 14px;
-	}
+    header {
+        justify-content: flex-start; 
+        padding: 10px;
+    }
+
+    .headerimage {
+        margin-right: 10px;
+    }
+
+    h1 {
+        font-size: 16px;
+    }
+
+    .profile-container {
+        flex-direction: column;
+    }
+
+    .profile-image {
+        width: 150px;
+    }
+
+    .profile-description {
+        max-width: 100%;
+        font-size: 14px;
+    }
 }
+
 
 .mainbox {
     margin: 2em auto;
@@ -235,18 +261,8 @@ hr {
     height: 50px;
 }
 
-#dark-mode-toggle {
-    background-color: #333;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-    font-weight: bold;
-}
-
 body.dark-mode {
-    background-color: #1d1d1d;
+    background-color: #1a1b1e;
     color: #ffffff;
 }
 
@@ -257,4 +273,34 @@ body.dark-mode {
 
 .dark-mode .copyright {
     color: #fff;
+}
+
+body.dark-mode header {
+    background-color: #262729;
+    color: #ffffff;
+}
+
+body.dark-mode header {
+    background-color: #262729;
+    color: #ffffff;
+}
+
+body.dark-mode header h1 {
+    color: #ffffff;
+}
+@media (max-width: 768px) {
+    header {
+        justify-content: space-between;
+        padding: 10px;
+        align-items: center;
+    }
+
+    .headerimage, .mozi {
+        margin-left: 10px;
+    }
+
+    #dark-mode-toggle {
+        margin-left: auto;
+        margin-right: 10px;
+    }
 }
