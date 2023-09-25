@@ -7,28 +7,29 @@ window.addEventListener("load", function () {
         overlayElement.style.display = "none";
         document.querySelector("main").style.display = "block";
     }, 3000);
-});
 
-window.addEventListener("load", function () {
-    var loadingElement = document.getElementById("loading");
-    var overlayElement = document.getElementById("overlay");
-    var mainElement = document.querySelector("main");
     var darkModeButton = document.getElementById("dark-mode-toggle");
 
-    setTimeout(function () {
-        loadingElement.style.display = "none";
-        overlayElement.style.display = "none";
-        mainElement.style.display = "block";
-    }, 3000);
-
     darkModeButton.addEventListener("click", function () {
-        document.body.classList.toggle("dark-mode");
+        toggleDarkMode();
     });
 });
 
 function toggleDarkMode() {
     const body = document.body;
-    body.classList.toggle('dark-mode');
+    const darkModeButton = document.getElementById('dark-mode-toggle');
+
+    if (body.classList.contains('dark-mode')) {
+        body.classList.remove('dark-mode');
+        darkModeButton.textContent = 'ダーク';
+        darkModeButton.style.backgroundColor = '#333';
+        darkModeButton.style.color = '#fff';
+    } else { 
+        body.classList.add('dark-mode');
+        darkModeButton.textContent = 'ライト';
+        darkModeButton.style.backgroundColor = '#fff';
+        darkModeButton.style.color = '#333';
+    }
 }
 
 const darkModeToggle = document.getElementById('dark-mode-toggle');
